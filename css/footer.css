@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.footer-links {
+    justify-content: center;
+}
+
+.footer .footer-links a {
+    color: var(--white);
+    padding: 0 5px 0 5px;
+}
+
+.footer .footer-links a:hover {
+    color: var(--blue);
+}
+
+.footer .footer-text {
+    margin: 3px;
+    color: var(--white);
+}
