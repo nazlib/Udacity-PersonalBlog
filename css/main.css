@@ -13,32 +13,18 @@
 
 html {
     font-family: "Open Sans", arial, sans-serif;
-    box-sizing: border-box;
+    width: 100%;
 }
 body {
     background-color: var(--themecolor);
     font-size: var(--font-size);
-    margin: 0 auto;
+    height: 100%;
     width: 100%;
+    display: block;
+    color: #fff;
+    margin: 0;
 }
 
-@media (min-width: 768px) {
-    body {
-        max-width: 750px;
-    }
-}
-
-@media (min-width: 1024px) {
-    body {
-        max-width: 988px;
-    }
-}
-
-@media (min-width: 1200px) {
-    body {
-        max-width: 1164px;
-    }
-}
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
@@ -77,7 +63,6 @@ button:hover {
 .form-control {
     display: block;
     width: 100%;
-    padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;

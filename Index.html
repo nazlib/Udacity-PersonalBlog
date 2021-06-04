@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
 <head>
     <meta charset="utf-8" />
     <title>Template Title!</title>
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 </head>
 <body>
+
     <section class="container">
         <header class="header">
             <h2>VincentVanGogh</h2>
@@ -17,13 +18,14 @@
                 <a href="./contact.html">Contact</a>
             </div>
         </header>
-        <section class="content">
-            <div class="profile">
-                <div class="m-1">
+        <section>
+            <div class="row">
+                <div class="col-large-2 col-mobile-12 ">
                     <img class="avatar" src="./css/images/vangogh.jpg">
                 </div>
+                <div class="col-large-10 col-mobile-12 ">
                     <p>
-                        <blockquote cite="https://en.wikipedia.org/wiki/Vincent_van_Gogh">
+                        <blockquote class="text-center-mobile" cite="https://en.wikipedia.org/wiki/Vincent_van_Gogh">
                             <u><strong>Vincent Willem Van Gogh</strong></u>
                             <br />
                             was a Dutch post-impressionist painter who posthumously became one of the most famous and
@@ -44,9 +46,10 @@
                             poverty.
                         </blockquote>
                     </p>
+                </div>
             </div>
-            <div class="blog-card">
-                <div class="blog-card-item m-1">
+            <div class="row">
+                <div class="blog-card-item col-large-3 col-mobile-12">
                     <div class="blog-image">
                         <img src="./css/images/starrynight.jpg" class="blog-card-image">
                     </div>
@@ -62,7 +65,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="blog-card-item m-1">
+                <div class="blog-card-item col-large-3 col-mobile-12  my-mobile-1">
                     <div class="blog-image">
                         <img src="./css/images/cafe.jpg" class="blog-card-image">
                     </div>
@@ -78,7 +81,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="blog-card-item m-1">
+                <div class="blog-card-item col-large-3 col-mobile-12">
                     <div class="blog-image">
                         <img src="./css/images/bedroom.jpg" class="blog-card-image">
                     </div>
@@ -94,6 +97,7 @@
                         </p>
                     </div>
                 </div>
+
             </div>
         </section>
         <footer class="footer">
@@ -104,7 +108,8 @@
             </div>
             <span class="footer-text"><small>© 2021 VanGogh</small></span>
         </footer>
-    </section>
+        </section>
+
 </body>
 
 </html>

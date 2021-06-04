@@ -10,13 +10,18 @@
     grid-template-areas: 'header' 'main' 'footer';
 }
 
+
 .avatar {
     vertical-align: middle;
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    margin: 0 auto;
 }
-
+section {
+    margin: 0;
+    padding: 15px;
+}
 .contact {
     grid-area: content;
     background-color: var(--themecolor);
@@ -64,17 +69,19 @@
     grid-gap: 8px;
     padding: 30px 0px 0 0px;
 }
-
+.text-center {
+    text-align: center;
+}
 .blog-card-item {
     min-height: 250px;
     max-height: 450px;
-    max-width: 400px;
     text-align: center;
     border: 1px solid #ffb200;
     border-radius: 5px;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
     color: var(--white);
+    margin: .4em;
 }
 
 .blog-card-item:hover {
@@ -99,6 +106,7 @@
     color: var(--white);
     border-bottom: 1px solid var(--gray);
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .article-header h1 small {
@@ -120,12 +128,13 @@
 .article-header-image {
     max-height: 150px;
     overflow: hidden;
+    width: 100%;
 }
 
 .article-header-image img {
     display: block;
     max-width: 100%;
-    height: auto
+    height: auto;
 }
 
 .article-content {
@@ -133,13 +142,79 @@
 }
 
 .article-image {
-    text-align: center;
-}
-
-.article-image img {
-    max-width: 400px;
-    min-width: 400px;
+    vertical-align: middle;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
 }
 .article-header-buttons button{
     margin-left: 5px !important;
+}
+
+/* Mobile */
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+.text-center {
+    text-align: center;
+}
+@media (min-width: 767px) and (max-width: 1980px) {
+    .col-large-2 {
+        width: 20%;
+    }
+    
+    .col-large-3 {
+        width: 32%;
+    }
+
+    .col-large-10 {
+        width: 80%;
+    }
+
+    .col-large-12 {
+        width: 100%;
+    }
+    .mx-1 {
+        margin: 0 1em;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 768px) {
+    .col-mobile-12 {
+        width: 100%;
+    }
+
+    .avatar {
+        margin: 0 auto;
+        width: 250px;
+        height: 250px;
+    }
+    .blog-card-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .my-mobile-1 {
+        margin: 1em 0;
+    }
+    .text-center-mobile {
+        text-align: center;
+    }
+    .article-image {
+        margin: 0 auto;
+        width: 100%;
+    }
+    section {
+        margin: 0;
+        padding: 0px;
+    }
 }
